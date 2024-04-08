@@ -1,0 +1,45 @@
+.flex{
+    display: flex;
+}
+
+.title{
+    font-weight:900;
+    font-size: 3.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #FFD011
+}
+
+.container {
+    width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.testing{
+    height: 30vh;
+    width: 20vw;
+    background: lightgray;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.cert{
+    height: 30vh;
+    width: 15vw;
+    background: lightgray;
+}
+
+.circle {
+    // border-radius: 50%; /* Make it a circle */
+    background-color: red; /* Color of the circle */
+}
+
+@media (max-width: 430px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .flex-column {
+        width: 100%;
+    }
+}

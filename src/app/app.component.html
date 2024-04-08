@@ -1,0 +1,119 @@
+<header>
+  <!-- <div class="flex" style="height: 100%; width: 100%; justify-content: space-between; align-items: center;">
+    <div style="background: white; height: 100%; width: 30%">
+
+    </div>
+    <div class="flex" style="justify-content: space-around ; align-items: center; height: 100%; width: 60%">
+      <div class="headerChoice" (click)="goToHomePage()">
+       <p class="chineseBold"> 首页 </p>  
+      </div>
+      <div class="headerChoice" (click)="goToAboutPage()">
+       <p class="chineseBold"> 关于OEM4U</p> 
+      </div>
+      <div  class="headerChoice" (click)="goToLivePage()">
+        <p class="chineseBold">线上看厂</p>
+      </div>
+      <div  class="headerChoice" (click)="goToCenterPage()">
+        <p class="chineseBold">代加工产品中心</p>
+      </div>
+      <div  class="headerChoice" (click)="goToContact()">
+        <p class="chineseBold">联系方式</p>
+      </div>
+    </div>
+  </div> -->
+
+<nav>
+  <input type="checkbox" name="" value="" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <label class="logo">
+    OEM4U
+  </label>
+  <ul>
+    <li>
+      <div (click)="goToHomePage()" [ngStyle]="isSelected === 'home' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
+        首页
+      </div>
+    </li>
+    <li>
+      <div (click)="goToAboutPage()" [ngStyle]="isSelected === 'about' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
+        关于OEM4U
+      </div>
+    </li>
+    <li>
+      <div (click)="goToLivePage()" [ngStyle]="isSelected === 'live' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
+        线上看厂
+      </div>
+    </li>
+    <li>
+      <div (click)="goToCenterPage()" [ngStyle]="isSelected === 'center' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
+        代加工产品中心
+      </div>
+    </li>
+    <li>
+      <div>
+        常见问题
+      </div>
+    </li>
+    <li>
+      <div (click)="goToContact()" [ngStyle]="isSelected === 'contact' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
+        联系方式
+      </div>
+    </li>
+  </ul>
+
+</nav>
+
+</header>
+
+<body>
+  <router-outlet></router-outlet>
+</body>
+
+
+<footer>  
+  <div class="flex" style="justify-content: space-between; height: 100%; width:100%">
+    <div style="background: white; height: 40%; width: 40%">
+
+    </div>
+    <div class="flex" style="justify-content: space-between;height:100%; width: 40%; margin-right: 5%;">
+      <div class="flex" style="width: 40%;flex-direction: column; justify-content: space-between;">
+        <p class="chineseBold" style="font-size: 1rem; color : white">
+          网站地图
+        </p>
+        <p style="color : white" (click)="goToHomePage()">
+          主页
+        </p>
+        <p style="color : white" (click)="goToAboutPage()">
+          关于OEM4U
+        </p>
+        <p style="color : white" (click)="goToLivePage()">
+          线上看厂
+        </p>
+        <p style="color : white" (click)="goToCenterPage()">
+          代加工产品中心
+        </p>
+        <p style="color : white" (click)="goToContact()">
+          联系方式
+        </p>
+      </div>
+      <div class="flex" style="height: 70%; width: 40%; flex-direction: column; justify-content: space-between;">
+        <p class="chineseBold" style="font-size: 1rem; color : white">
+          联系我们
+        </p>
+        <p style="color : white">
+          sales.oem4u&#64;gmail.com
+        </p>
+        <p style="color : white">
+          +6018 211  5769 / +6016996 9869
+        </p>
+        <div class="flex" style="background: white; height: 10%; width: 60%;">
+        </div>
+        <p style="color : white">
+          Copyright&#64;OEM4U2024
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
