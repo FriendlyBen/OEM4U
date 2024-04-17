@@ -1,1 +1,241 @@
-<p>center works!</p>
+<div class="flex" style="box-sizing: border-box;flex-direction: column; width: 100%; padding: 3vw; align-items: center;
+justify-content: space-between;">
+   
+   <!--header-->
+    <p style="font-size:3rem">
+        宠物产品系列
+    </p>
+
+    <!--choose category-->
+    <div class="flex" style="justify-content: space-between; width:40%; margin-bottom: 5vh">
+        <div class="flex" [ngStyle]="whichCategory === 1 ? {'background':'black','color':'white'}:{}"
+        style="width: 13vw; height: 6vh; border-radius: 50px; justify-content: center; 
+        border: 2px solid black; align-items: center;" (click)="chooseCategory(1)">
+            <p style="font-size:1.3rem">
+                主食系列
+            </p>
+        </div>
+        <div class="flex" [ngStyle]="whichCategory === 2 ? {'background':'black','color':'white'}:{}"
+        style="width: 13vw; height: 6vh; border-radius: 50px; justify-content: center; 
+        border: 2px solid black; align-items: center;" (click)="chooseCategory(2)">
+            <p style="font-size:1.3rem">
+                保健品系列
+            </p>
+        </div>
+    </div>
+
+    <!--products-->
+    <div class="flex" style="width: 100%; flex-direction: column; align-items: center; ">
+
+        <!--row card-->
+        <div class="flex" style="justify-content: space-around; align-items: center; width:70%;margin-bottom:5vh">
+
+            <!--card-->
+            <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                
+                <!--image-->
+                <div style="width:18vw; height: 30vh;">
+
+                </div>
+
+                <!--description-->
+                <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                font-size: 1.3rem">
+                    高品质犬湿粮
+                </div>
+            </div>
+
+            <!--card-->
+            <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                
+                <!--image-->
+                <div style="width:18vw; height: 30vh;">
+
+                </div>
+
+                <!--description-->
+                <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                font-size: 1.3rem">
+                    高品质犬湿粮
+                </div>
+            </div>
+
+            <!--card-->
+            <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                
+                <!--image-->
+                <div style="width:18vw; height: 30vh;">
+
+                </div>
+
+                <!--description-->
+                <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                font-size: 1.3rem">
+                    高品质犬湿粮
+                </div>
+            </div>
+        </div>
+
+        <!--row card-->
+        <div class="flex" style="justify-content: space-around; align-items: center; width:70%; margin-bottom:5vh">
+
+            <!--card-->
+            <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                
+                <!--image-->
+                <div style="width:18vw; height: 30vh;">
+
+                </div>
+
+                <!--description-->
+                <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                font-size: 1.3rem">
+                    高品质犬湿粮
+                </div>
+            </div>
+
+            <!--card-->
+            <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                
+                <!--image-->
+                <div style="width:18vw; height: 30vh;">
+
+                </div>
+
+                <!--description-->
+                <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                font-size: 1.3rem">
+                    高品质犬湿粮
+                </div>
+            </div>
+
+            <!--card-->
+            <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                
+                <!--image-->
+                <div style="width:18vw; height: 30vh;">
+
+                </div>
+
+                <!--description-->
+                <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                font-size: 1.3rem">
+                    高品质犬湿粮
+                </div>
+            </div>
+        </div>
+
+                <!--row card-->
+                <div class="flex" style="justify-content: space-around; align-items: center; width:70%; margin-bottom:5vh">
+
+                    <!--card-->
+                    <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                        
+                        <!--image-->
+                        <div style="width:18vw; height: 30vh;">
+        
+                        </div>
+        
+                        <!--description-->
+                        <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                        border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                        font-size: 1.3rem">
+                            高品质犬湿粮
+                        </div>
+                    </div>
+        
+                    <!--card-->
+                    <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                        
+                        <!--image-->
+                        <div style="width:18vw; height: 30vh;">
+        
+                        </div>
+        
+                        <!--description-->
+                        <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                        border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                        font-size: 1.3rem">
+                            高品质犬湿粮
+                        </div>
+                    </div>
+        
+                    <!--card-->
+                    <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                        
+                        <!--image-->
+                        <div style="width:18vw; height: 30vh;">
+        
+                        </div>
+        
+                        <!--description-->
+                        <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                        border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                        font-size: 1.3rem">
+                            高品质犬湿粮
+                        </div>
+                    </div>
+                </div>
+
+                        <!--row card-->
+        <div class="flex" style="justify-content: space-around; align-items: center; width:70%; margin-bottom:5vh">
+
+            <!--card-->
+            <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                
+                <!--image-->
+                <div style="width:18vw; height: 30vh;">
+
+                </div>
+
+                <!--description-->
+                <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                font-size: 1.3rem">
+                    高品质犬湿粮
+                </div>
+            </div>
+
+            <!--card-->
+            <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                
+                <!--image-->
+                <div style="width:18vw; height: 30vh;">
+
+                </div>
+
+                <!--description-->
+                <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                font-size: 1.3rem">
+                    高品质犬湿粮
+                </div>
+            </div>
+
+            <!--card-->
+            <div class="flex" style="flex-direction: column; border-radius: 20px; border: 2px solid black;">
+                
+                <!--image-->
+                <div style="width:18vw; height: 30vh;">
+
+                </div>
+
+                <!--description-->
+                <div class="flex" style="justify-content: center; align-items: center; background:black; 
+                border-bottom-left-radius: 18px; border-bottom-right-radius: 18px; color:white;height: 10vh;
+                font-size: 1.3rem">
+                    高品质犬湿粮
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>

@@ -5,3 +5,9 @@
 *{
     font-family: Arial, Helvetica, sans-serif
 }
+
+@media(max-width: 539px){
+    #title{
+        font-size: 0.9rem;
+    }
+}

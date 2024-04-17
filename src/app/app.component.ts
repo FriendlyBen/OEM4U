@@ -44,4 +44,9 @@ export class AppComponent {
     this.isSelected = 'center'
     this.router.navigate(['/center'])
   }
+
+  gotoFaqPage(){
+    this.isSelected = 'faq'
+    this.router.navigate(['/faq'])
+  }
 }

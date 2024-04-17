@@ -1,0 +1,101 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="flex" style="flex-direction: column; align-items: center ;box-sizing: border-box; width: 100%; padding: 5vh 15vw; justify-content: space-between;">
+    <p id="title" style="font-size: 3rem">
+        一般常见问题解答
+    </p>
+    <div class="flex" style="flex-direction: column; width: 100%;align-items: center;">
+        <div class="flex" (click)="showAnswer(1)" style="align-items: center; justify-content: space-between;background: lightgray;width:100%; padding: 3vh 2vw; font-size: 1.5rem">
+            OEM4U是正规的大健康保健品和宠物健康食品生产家吗？
+            <i class="fa fa-chevron-down" style="color:gray"></i>
+        </div>
+        <div *ngIf="showThisAnswer === 1" class="flex" style="align-items: center; justify-content: space-between;background: #F9F9F9; width:100%; padding: 2vh 2vw; font-size: 1.5rem">
+            OEM4U已经从事大健康贴牌代加工行业三十多年的经验，是一加专业、正规的生产厂家，拥有齐全的相关生产资质及证照，所生产产品符合国家及行业标准。
+        </div>
+    </div>
+
+    <div class="flex" style="flex-direction: column; width: 100%;align-items: center;">
+        <div class="flex" (click)="showAnswer(2)" style="align-items: center; justify-content: space-between;background: lightgray; width:100%; padding: 3vh 2vw; margin: 1vh 0 0 0; font-size: 1.5rem">
+            如何知道OEM4U生产的产品质量效果如何?能够提供样板吗？
+            <i class="fa fa-chevron-down" style="color:gray"></i>
+        </div>
+        <div *ngIf="showThisAnswer === 2" class="flex" style="align-items: center; justify-content: space-between;background: #F9F9F9; width:100%; padding: 2vh 2vw; font-size: 1.5rem">
+            OEM4U拥有各类型的健康食品专业配方，客户如果对产品效果有疑虑的话可申请样品体验，样品押金为RM500 - RM2000，期间的样品可以无限调整配方及口味等 直到符合客户的需求。此外，样品押金会在结清尾款时退款。实验室打样时间2个星期以内，具体根据样板的数量确定。OEM4U在收到押金后会立即进行研发与打样。如在研发与打样期内，客户终止合作，则所支付样品押金将会作为违约金，OEM4U不做退还。
+        </div>
+    </div>
+
+    <div class="flex" style="flex-direction: column; width: 100%;align-items: center;">
+        <div class="flex" (click)="showAnswer(3)" style="align-items: center; justify-content: space-between;background: lightgray; width:100%; padding: 3vh 2vw; margin: 1vh 0 0 0;font-size: 1.5rem">
+            我能不能指定生产的产品达到和市面上某款产品一样的功效?
+            <i class="fa fa-chevron-down" style="color:gray"></i>
+        </div>
+        <div *ngIf="showThisAnswer === 3" class="flex" style="align-items: center; justify-content: space-between;background: #F9F9F9; width:100%; padding: 2vh 2vw; font-size: 1.5rem">
+            OEM4U能够完全满足客户需求，如果需要指定产品功效和另一款产品相同，客户可以将指定产品寄送给我们，实验室分析成分功效后，会根据指定产品的功效成分配置制作一份样品寄送给客户确认。
+        </div>
+    </div>
+
+    <div class="flex" style="flex-direction: column; width: 100%;align-items: center;">
+        <div class="flex" (click)="showAnswer(4)" style="align-items: center; justify-content: space-between;background: lightgray; width:100%; padding: 2vh 2vw; margin: 1vh 0 0 0; font-size: 1.5rem">
+            我第一次定量比较少可以做吗?
+            <i class="fa fa-chevron-down" style="color:gray"></i>
+        </div>
+        <div *ngIf="showThisAnswer === 4" class="flex" style="align-items: center; justify-content: space-between;background: #F9F9F9; width:100%; padding: 2vh 2vw; font-size: 1.5rem">
+            第一次合作为了让客户放心我们也可以做相对少量的料，但是为了客户的成本和性价比考虑，OEM4U建议客户至少按照我们的最低起订量下单, 再进行调整。因为开少量50kg的料和一般起订量100kg的料占用的时间和人力成本还有生产环节流程都是一样的，所以达不到最低起订量就会要加收开料费。
+        </div>
+    </div>
+
+    <div class="flex" style="flex-direction: column; width: 100%;align-items: center;">
+        <div class="flex" (click)="showAnswer(5)" style="align-items: center; justify-content: space-between;background: lightgray; width:100%; padding: 3vh 2vw; margin: 1vh 0 0 0; font-size: 1.5rem">
+            生产周期一般需要多久?
+            <i class="fa fa-chevron-down" style="color:gray"></i>
+        </div>
+        <div *ngIf="showThisAnswer === 5" class="flex" style="align-items: center; justify-content: space-between;background: #F9F9F9; width:100%; padding: 2vh 2vw; font-size: 1.5rem">
+            如果是由我厂采购所有包材物料，一般是合同约定定金到账后开始采购所有包材60日内包材到厂，包材到厂后7个工作日内完成出货，如批次生产数量较多时，双方另行磋商确定交货期。由客户自行提供包材、辅材的情况下，相关物料全部到OEM4U指定场所后7个工作日内完成交货工作，如批次生产数量较多时，双方另行磋商确定交货期。
+        </div>
+    </div>
+
+    <div class="flex" style="flex-direction: column; width: 100%;align-items: center;">
+        <div class="flex" (click)="showAnswer(6)" style="align-items: center; justify-content: space-between;background: lightgray; width:100%; padding: 3vh 2vw; margin: 1vh 0 0 0; font-size: 1.5rem">
+            合作付款流程是什么模式?
+            <i class="fa fa-chevron-down" style="color:gray"></i>
+        </div>
+        <div *ngIf="showThisAnswer === 6" class="flex" style="align-items: center; justify-content: space-between;background: #F9F9F9; width:100%; padding: 2vh 2vw; font-size: 1.5rem">
+            在客户确认产品生产工艺效用配方和包材要求及订单数量后，OEM4U会与顾客确定订单信息，付款方式是确认订单后付50%定金，OEM4U则开始处理订单，进入采购生产流程，产品生产完成，OEM4U检测质量合格后，在发货前客户结清尾款则发货送至客户约定地点。
+        </div>
+    </div>
+
+    <div class="flex" style="flex-direction: column; width: 100%;align-items: center;">
+        <div class="flex" (click)="showAnswer(7)" style="align-items: center; justify-content: space-between;background: lightgray; width:100%; padding: 3vh 2vw; margin: 1vh 0 0 0; font-size: 1.5rem">
+            OEM4U能给我的产品设计外观包装吗?
+            <i class="fa fa-chevron-down" style="color:gray"></i>
+        </div>
+        <div *ngIf="showThisAnswer === 7" class="flex" style="align-items: center; justify-content: space-between;background: #F9F9F9; width:100%; padding: 2vh 2vw; font-size: 1.5rem">
+            OEM4U拥有专业的包装设计团队，首次生产的客户需OEM4U进行外包装设计的，需要支付设计费，设计费介于RM750。此设计费将会包括在产品总订单内一起结算。OEM4U在收到押金后会立即启动设计工作，客户须配合OEM4U完成设计工作。设计美工服务包括Logo，产品名称和产品包装设计。
+        </div>
+    </div>
+
+    <div class="flex" style="flex-direction: column; width: 100%;align-items: center;">
+        <div class="flex" (click)="showAnswer(8)" style="align-items: center; justify-content: space-between;background: lightgray; width:100%; padding: 3vh 2vw; margin: 1vh 0 0 0; font-size: 1.5rem">
+            我能自己订购提供包材过来生产吗?
+            <i class="fa fa-chevron-down" style="color:gray"></i>
+        </div>
+        <div *ngIf="showThisAnswer === 8" class="flex" style="align-items: center; justify-content: space-between;background: #F9F9F9; width:100%; padding: 2vh 2vw; font-size: 1.5rem">
+            可以的，OEM4U可以接受客户自订包材到厂生产，OEM4U只收内料费和人工费
+        </div>
+    </div>
+
+    <div class="flex" style="flex-direction: column; width: 100%;align-items: center;">
+        <div class="flex" (click)="showAnswer(9)" style="align-items: center; justify-content: space-between;background: lightgray; width:100%; padding: 3vh 2vw; margin: 1vh 0 0 0; font-size: 1.5rem">
+            我可以自己提供产品内料或配方来OEM4U生产吗?
+            <i class="fa fa-chevron-down" style="color:gray"></i>
+        </div>
+        <div *ngIf="showThisAnswer === 9" class="flex" style="align-items: center; justify-content: space-between;background: #F9F9F9; width:100%; padding: 2vh 2vw; font-size: 1.5rem">
+            可以的，自来料和自来配方都需以书面形式告知OEM4U客户提供的料体和配方内的激素成分含量、抗生素成分含量、是否含重金属及含量，是否含毒物等成分的说明，客户如果能接受OEM4U的加工合同则可进行生产。
+        </div>
+    </div>
+
+
+
+</div>

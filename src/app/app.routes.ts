@@ -4,6 +4,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { LiveComponent } from './pages/live/live.component';
 import { CenterComponent } from './pages/center/center.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 export const routes: Routes = [
     {
@@ -20,5 +21,8 @@ export const routes: Routes = [
     },
     {
         path:'center', component: CenterComponent
+    },
+    {
+        path:'faq',component: FaqComponent
     }
 ];

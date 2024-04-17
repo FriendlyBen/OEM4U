@@ -1,26 +1,4 @@
 <header>
-  <!-- <div class="flex" style="height: 100%; width: 100%; justify-content: space-between; align-items: center;">
-    <div style="background: white; height: 100%; width: 30%">
-
-    </div>
-    <div class="flex" style="justify-content: space-around ; align-items: center; height: 100%; width: 60%">
-      <div class="headerChoice" (click)="goToHomePage()">
-       <p class="chineseBold"> 首页 </p>  
-      </div>
-      <div class="headerChoice" (click)="goToAboutPage()">
-       <p class="chineseBold"> 关于OEM4U</p> 
-      </div>
-      <div  class="headerChoice" (click)="goToLivePage()">
-        <p class="chineseBold">线上看厂</p>
-      </div>
-      <div  class="headerChoice" (click)="goToCenterPage()">
-        <p class="chineseBold">代加工产品中心</p>
-      </div>
-      <div  class="headerChoice" (click)="goToContact()">
-        <p class="chineseBold">联系方式</p>
-      </div>
-    </div>
-  </div> -->
 
 <nav>
   <input type="checkbox" name="" value="" id="check">
@@ -32,33 +10,57 @@
   </label>
   <ul>
     <li>
-      <div (click)="goToHomePage()" [ngStyle]="isSelected === 'home' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
-        首页
+      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToHomePage()">
+        <p>
+          首页
+        </p>
+        <div *ngIf="isSelected === 'home'" style="background: #FFD011; border-radius: 20px; height:0.7vh; width:2vw;">
+        </div>
       </div>
     </li>
     <li>
-      <div (click)="goToAboutPage()" [ngStyle]="isSelected === 'about' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
-        关于OEM4U
+      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToAboutPage()">
+        <p>
+          关于OEM4U
+        </p>
+        <div *ngIf="isSelected === 'about'" style="background: #FFD011; border-radius: 20px; height:0.7vh; width:2vw;">
+        </div>
       </div>
     </li>
     <li>
-      <div (click)="goToLivePage()" [ngStyle]="isSelected === 'live' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
-        线上看厂
+      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToLivePage()">
+        <p>
+          线上看厂
+        </p>
+        <div *ngIf="isSelected === 'live'" style="background: #FFD011; border-radius: 20px; height:0.7vh; width:2vw;">
+        </div>
       </div>
     </li>
     <li>
-      <div (click)="goToCenterPage()" [ngStyle]="isSelected === 'center' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
-        代加工产品中心
+      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToCenterPage()">
+        <p>
+          代加工产品中心
+        </p>
+        <div *ngIf="isSelected === 'center'" style="background: #FFD011; border-radius: 20px; height:0.7vh; width:2vw;">
+        </div>
       </div>
     </li>
     <li>
-      <div>
-        常见问题
+      <div class="flex" style="flex-direction: column; align-items: center;" (click)="gotoFaqPage()">
+        <p>
+          常见问题
+        </p>
+        <div *ngIf="isSelected === 'faq'" style="background: #FFD011; border-radius: 20px; height:0.7vh; width:2vw;">
+        </div>
       </div>
     </li>
     <li>
-      <div (click)="goToContact()" [ngStyle]="isSelected === 'contact' ? {'border-bottom': '0.3vw solid #FFD011', 'border-bottom-left-radius': '5px', 'border-bottom-right-radius': '5px'} : {}">
-        联系方式
+      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToContact()">
+        <p>
+          联系方式
+        </p>
+        <div *ngIf="isSelected === 'contact'" style="background: #FFD011; border-radius: 20px; height:0.7vh; width:2vw;">
+        </div>
       </div>
     </li>
   </ul>
@@ -73,44 +75,47 @@
 
 
 <footer>  
-  <div class="flex" style="justify-content: space-between; height: 100%; width:100%">
-    <div style="background: white; height: 40%; width: 40%">
+  <div class="flex" id="footer-container" style="justify-content: space-between; height: 100%; width:100%">
+    <div id="footer-logo" style="background: white; height: 10vh; width: 40vw">
 
     </div>
-    <div class="flex" style="justify-content: space-between;height:100%; width: 40%; margin-right: 5%;">
-      <div class="flex" style="width: 40%;flex-direction: column; justify-content: space-between;">
-        <p class="chineseBold" style="font-size: 1rem; color : white">
+    <div class="flex" id="footer-details" style="justify-content: space-between;  margin-right: 5%;">
+      <div class="flex"  style="flex-direction: column; justify-content: space-between;">
+        <p  style="font-size: 1rem;">
           网站地图
         </p>
-        <p style="color : white" (click)="goToHomePage()">
+        <p (click)="goToHomePage()">
           主页
         </p>
-        <p style="color : white" (click)="goToAboutPage()">
+        <p (click)="goToAboutPage()">
           关于OEM4U
         </p>
-        <p style="color : white" (click)="goToLivePage()">
+        <p  (click)="goToLivePage()">
           线上看厂
         </p>
-        <p style="color : white" (click)="goToCenterPage()">
+        <p (click)="goToCenterPage()">
           代加工产品中心
         </p>
-        <p style="color : white" (click)="goToContact()">
+        <p (click)="gotoFaqPage()">
+          常见问题
+        </p>
+        <p  (click)="goToContact()">
           联系方式
         </p>
       </div>
-      <div class="flex" style="height: 70%; width: 40%; flex-direction: column; justify-content: space-between;">
-        <p class="chineseBold" style="font-size: 1rem; color : white">
+      <div class="flex" style="height: 70%; width: 45%; flex-direction: column; justify-content: space-between;">
+        <p  style="font-size: 1rem;">
           联系我们
         </p>
-        <p style="color : white">
+        <p >
           sales.oem4u&#64;gmail.com
         </p>
-        <p style="color : white">
+        <p >
           +6018 211  5769 / +6016996 9869
         </p>
         <div class="flex" style="background: white; height: 10%; width: 60%;">
         </div>
-        <p style="color : white">
+        <p >
           Copyright&#64;OEM4U2024
         </p>
       </div>

@@ -1,21 +1,20 @@
 <body>
     <!--picture-->
-    <div style="background: lightblue; height:60vh;width:100%">
+    <div style="background: lightblue; height:50vh;width:100%;">
 
     </div>
 
     <!--关于OEM4U-->
-    <div class="container">
-        <div class="flex" style=" width: 100%;flex-direction: column;justify-content:space-between; align-items: center;margin-bottom:4%;">
-            <div class="flex" style="width: 85%; justify-content: space-between; align-items: center;">
-                <div style="background: black; height: 90vh; width: 35vw;margin-top: 7vh;">
+    <div class="container" style=" padding: 5%">
+            <div id="aboutOEM4Uflex" class="flex-row" >
+                <div id="aboutOEM4Uimage">
 
                 </div>
-                <div class="flex" style="flex-direction: column; font-family: Arial, Helvetica, sans-serif;">
-                    <p style="font-size: 3vw;">
+                <div id="aboutOEM4UdescContainer" class="flex-column">
+                    <p id="aboutOEM4U">
                         关于OEM4U
                     </p>
-                    <div style="width: 40vw; text-align: justify; font-size: 1.5rem;  font-family: Arial, Helvetica, sans-serif;">
+                    <div id="aboutOEM4Udescription">
                         OEM4U是一家拥有30+年经验的一站式OEM/ODM/OBM贴牌加工生产商,专
                         门用于大健康保健品和宠物健康食品配方研发定制、成品加工生产整合
                         服务于一体的研发服务型企业。目前,OEM4U拥有专业的配套研发实验
@@ -34,8 +33,6 @@
 
 
             </div>
-        </div>
-
     </div>
 
     <!--Pie Chart-->
@@ -98,72 +95,72 @@
     <div class="container" style="background: white; ">
         <div class="flex" style=" width: 100%;flex-direction: column;justify-content:space-between; align-items: center;margin-bottom:4%">
             <h1 class="title">
-                OEM4U产品专业研发
+                公司业务模式
             </h1>
-            <div class="flex" style="width: 80%; justify-content: space-evenly">
-                <div style="width: 30%; background: red; border-radius: 50%; height: 50vh;">
+            <div id="pieChartRow" class="flex-row">
+                <div class="circle">
                 </div>
 
-                <div class="flex" style="flex-direction: column; justify-content: center;">
-                    <div class="flex" style="align-items: center; margin-bottom: 3%">
-                        <div style="height: 3vh; width:3vh; background: red; border-radius: 10%;">
+                <div class="flex-column pcLegendDiv">
+                    <div class="flex">
+                        <div class="pcLegendBox" style="background:red;">
                         </div>
-                        <div style="font-size: 1.5rem; font-weight: 400;">
+                        <div class="pcLegend">
                             自主加工品牌
                         </div>
                     </div>
                     <div class="flex" style="align-items: center; margin-bottom: 3%">
-                        <div style="height: 3vh; width:3vh; background: #FFD011; border-radius: 10%;">
+                        <div class="pcLegendBox" style=" background: #FFD011;">
                         </div>
-                        <div style="font-size: 1.5rem; font-weight: 400;">
+                        <div class="pcLegend">
                             半成品可加工
                         </div>
                     </div>
                     <div class="flex" style="align-items: center; margin-bottom: 3%">
-                        <div style="height: 3vh; width:3vh; background: #5CF11B; border-radius: 10%;">
+                        <div class="pcLegendBox" style="background: #5CF11B;">
                         </div>
-                        <div style="font-size: 1.5rem; font-weight: 400;">
+                        <div class="pcLegend">
                             来样仿版加工
                         </div>
                     </div>
                     <div class="flex" style="align-items: center; margin-bottom: 3%">
-                        <div style="height: 3vh; width:3vh; background: #9D19F8; border-radius: 10%;">
+                        <div class="pcLegendBox" style="background: #9D19F8;">
                         </div>
-                        <div style="font-size: 1.5rem; font-weight: 400;">
+                        <div class="pcLegend">
                             按需打样定制
                         </div>
                     </div>
                 </div>
-                <div class="flex" style="flex-direction: column; width: 43%; justify-content: space-between">
+                <div id="pieChartPoints" class="flex-column" style=" width: 43%; justify-content: space-between">
                     <div style="margin-bottom: 5%">
-                        <div class="title" style="font-size: 2.5rem;">
+                        <div class="pcPointsTitle">
                             自主加工品牌
                         </div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: gray">
+                        <div class="pcPointsDesc">
                             告诉我们您品牌名称，拥有您的专属品牌
                         </div>
                     </div>
                     <div  style="margin-bottom: 5%">
-                        <div class="title" style="font-size: 2.5rem;">
+                        <div  class="pcPointsTitle">
                             半成品可供应
                         </div>
-                        <div style="font-size: 1.5rem;">
+                        <div class="pcPointsDesc">
                             无需灌装更方便、更灵活、更快速
                         </div>
                     </div>
                     <div  style="margin-bottom: 5%">
-                        <div class="title" style="font-size: 2.5rem;">
+                        <div class="pcPointsTitle">
                             来样仿版加工
                         </div>
-                        <div style="font-size: 1.5rem;">
+                        <div class="pcPointsDesc">
                             您把样板给我们，您将拥有国际大牌版的产品
                         </div>
                     </div>
                     <div  style="margin-bottom: 5%">
-                        <div class="title" style="font-size: 2.5rem;">
+                        <div  class="pcPointsTitle">
                             按需打样定制
                         </div>
-                        <div style="font-size: 1.5rem;">
+                        <div class="pcPointsDesc">
                             品牌或个人的需求打造独一无二的产品
                         </div>
                     </div>
