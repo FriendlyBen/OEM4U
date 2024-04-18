@@ -9,6 +9,16 @@ head{
     z-index: 2;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index as needed */
+    background-color: #ffffff; /* Set your desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 body{
     z-index: 1;
 }
@@ -19,7 +29,10 @@ label.logo{
     font-weight: bold;
     line-height:14vh;
     padding: 0 6.5vw;
+}
 
+.logo{
+    height: 8vh;
 }
 
 nav ul{
@@ -33,7 +46,7 @@ nav ul li{
     padding: 0;
     margin: 2.8vh 1.5vw 0 1.5vw;
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     // font-size: 1.5vw;
 }
 
@@ -94,6 +107,7 @@ nav ul li{
         height: 100vh;
         background: #E8E8E8;
         left: -100%;
+        top:15%;
         text-align: center;
         transition: all .5s;
     }
@@ -105,7 +119,11 @@ nav ul li{
 
     #check:checked ~ ul{
         left :0;
+        top:15%;
     }
+
+
+    
     
 }
 
@@ -150,6 +168,11 @@ nav ul li{
 
 .flex {
     display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }
 
 

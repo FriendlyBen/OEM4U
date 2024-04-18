@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterOutlet } from '@angular/router';
 
@@ -9,9 +9,10 @@ import { Router, RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
+  @ViewChild('check') check: ElementRef | undefined;
   title = 'OEM4U';
-
+  isNavBarOpen: boolean = false;
   isSelected: string = "home";
 
   constructor(
@@ -19,34 +20,67 @@ export class AppComponent {
   ){
 
   }
+
+  ngAfterViewInit() {
+    // Dispatch the change event after the view is initialized
+    this.goToHomePage();
+  }
+
+  toggleNavbar() {
+    this.isNavBarOpen = !this.isNavBarOpen;
+  }
   
   goToHomePage(){
-    this.isSelected = 'home'
-    this.router.navigate([''])
+    this.isSelected = 'home';
+    this.toggleNavbar();
+    if(this.check !== undefined){
+      this.check.nativeElement.checked = false;
+    }
+    this.router.navigate(['']);
   }
 
   goToContact(){
-    this.isSelected = 'contact'
-    this.router.navigate(['/contact'])
+    this.isSelected = 'contact';
+    this.toggleNavbar();
+    if(this.check !== undefined){
+      this.check.nativeElement.checked = false;
+    }
+    this.router.navigate(['/contact']);
   }
 
   goToAboutPage(){
-    this.isSelected = 'about'
+    this.isSelected = 'about';
+    this.toggleNavbar();
+    if(this.check !== undefined){
+      this.check.nativeElement.checked = false;
+    }
     this.router.navigate(['/about'])
   }
 
   goToLivePage(){
-    this.isSelected = 'live'
+    this.isSelected = 'live';
+    this.toggleNavbar();
+    if(this.check !== undefined){
+      this.check.nativeElement.checked = false;
+    }
     this.router.navigate(['/live'])
   }
 
   goToCenterPage(){
-    this.isSelected = 'center'
+    this.isSelected = 'center';
+    this.toggleNavbar();
+    if(this.check !== undefined){
+      this.check.nativeElement.checked = false;
+    }
     this.router.navigate(['/center'])
   }
 
   gotoFaqPage(){
-    this.isSelected = 'faq'
+    this.isSelected = 'faq';
+    this.toggleNavbar();
+    if(this.check !== undefined){
+      this.check.nativeElement.checked = false;
+    }
     this.router.navigate(['/faq'])
   }
 }

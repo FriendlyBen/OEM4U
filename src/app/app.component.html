@@ -1,16 +1,17 @@
 <header>
 
-<nav>
-  <input type="checkbox" name="" value="" id="check">
+<nav style="display: flex; justify-content: space-around; align-items: center;">
+  <input type="checkbox" name="" value="" id="check" #check (change)="toggleNavbar()">
+  <div>
+    <img style="border-radius: 10px;" class="logo" src="assets/OEM4U_Logo Set_Profile Pic.png" alt="OEM4U main logo profile pic">
+    <img  class="logo" src="assets/OEM4U_Logo Set-10.png" alt="OEM4U main logo">
+  </div>
   <label for="check" class="checkbtn">
     <i class="fas fa-bars"></i>
   </label>
-  <label class="logo">
-    OEM4U
-  </label>
   <ul>
     <li>
-      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToHomePage()">
+      <div class="flex-column" style="align-items: center;margin-bottom: 2.5vh" (click)="goToHomePage()">
         <p>
           首页
         </p>
@@ -19,7 +20,7 @@
       </div>
     </li>
     <li>
-      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToAboutPage()">
+      <div class="flex" style="flex-direction: column; align-items: center;margin-bottom: 2.5vh" (click)="goToAboutPage()">
         <p>
           关于OEM4U
         </p>
@@ -28,7 +29,7 @@
       </div>
     </li>
     <li>
-      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToLivePage()">
+      <div class="flex" style="flex-direction: column; align-items: center;margin-bottom: 2.5vh" (click)="goToLivePage()">
         <p>
           线上看厂
         </p>
@@ -37,7 +38,7 @@
       </div>
     </li>
     <li>
-      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToCenterPage()">
+      <div class="flex" style="flex-direction: column; align-items: center;margin-bottom: 2.5vh" (click)="goToCenterPage()">
         <p>
           代加工产品中心
         </p>
@@ -46,7 +47,7 @@
       </div>
     </li>
     <li>
-      <div class="flex" style="flex-direction: column; align-items: center;" (click)="gotoFaqPage()">
+      <div class="flex" style="flex-direction: column; align-items: center;margin-bottom: 2.5vh" (click)="gotoFaqPage()">
         <p>
           常见问题
         </p>
@@ -55,7 +56,7 @@
       </div>
     </li>
     <li>
-      <div class="flex" style="flex-direction: column; align-items: center;" (click)="goToContact()">
+      <div class="flex" style="flex-direction: column; align-items: center;margin-bottom: 2.5vh" (click)="goToContact()">
         <p>
           联系方式
         </p>
@@ -69,7 +70,7 @@
 
 </header>
 
-<body>
+<body [ngClass]="{'no-scroll': isNavBarOpen}">
   <router-outlet></router-outlet>
 </body>
 
