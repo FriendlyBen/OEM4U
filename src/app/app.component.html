@@ -70,53 +70,56 @@
 
 </header>
 
-<body [ngClass]="{'no-scroll': isNavBarOpen}">
+<body>
   <router-outlet></router-outlet>
 </body>
 
 
 <footer>  
-  <div class="flex" id="footer-container" style="justify-content: space-between; height: 100%; width:100%">
-    <div id="footer-logo" style="background: white; height: 10vh; width: 40vw">
-
+  <div class="flex" id="footer-container" style="justify-content: space-between; height: 25vh; width:90%; padding-left: 5vw">
+    <div id="footer-logo" style="height: 10vh; width: 40vw">
+      <img class="logo" src="assets/OEM4U_Logo Set-10.png" alt="OEM4U main logo">
     </div>
-    <div class="flex" id="footer-details" style="justify-content: space-between;  margin-right: 5%;">
-      <div class="flex"  style="flex-direction: column; justify-content: space-between;">
-        <p  style="font-size: 1rem;">
+    <div class="flex" id="footer-details" style="justify-content: space-around; width: 100%;">
+      <div class="flex-column"  style="justify-content: space-between; height: 100%">
+        <h4>
           网站地图
-        </p>
-        <p (click)="goToHomePage()">
+        </h4>
+        <p (click)="goToHomePage()" style="font-size: 0.9vw;">
           主页
         </p>
-        <p (click)="goToAboutPage()">
+        <p (click)="goToAboutPage()" style="font-size: 0.9vw;"> 
           关于OEM4U
         </p>
-        <p  (click)="goToLivePage()">
+        <p  (click)="goToLivePage()" style="font-size: 0.9vw;">
           线上看厂
         </p>
-        <p (click)="goToCenterPage()">
+        <p (click)="goToCenterPage()" style="font-size: 0.9vw;">
           代加工产品中心
         </p>
-        <p (click)="gotoFaqPage()">
+        <p (click)="gotoFaqPage()" style="font-size: 0.9vw;">
           常见问题
         </p>
-        <p  (click)="goToContact()">
+        <p  (click)="goToContact()" style="font-size: 0.9vw;">
           联系方式
         </p>
       </div>
-      <div class="flex" style="height: 70%; width: 45%; flex-direction: column; justify-content: space-between;">
-        <p  style="font-size: 1rem;">
+      <div class="flex-column" style="height: 70%; width: 45%; justify-content: space-between;">
+        <h4>
           联系我们
-        </p>
-        <p >
+        </h4>
+        <p style="font-size: 0.9vw;">
           sales.oem4u&#64;gmail.com
         </p>
-        <p >
+        <p style="font-size: 0.9vw;">
           +6018 211  5769 / +6016996 9869
         </p>
-        <div class="flex" style="background: white; height: 10%; width: 60%;">
+        <div class="flex" style=" height: 5vh; width: 60%;justify-content: start;">
+          <img style="width:2vw; object-fit: contain;" src="assets/facebook.png" alt="facebook">
+          <img style="width:2vw; object-fit: contain; margin: 0 1.5vw;" src="assets/instagram.png" alt="instagram">
+          <img style="width:2vw; object-fit: contain;" src="assets/WhatsApp.png" alt="WhatsApp">
         </div>
-        <p >
+        <p style="font-size: 0.9vw; font-weight: 550;">
           Copyright&#64;OEM4U2024
         </p>
       </div>
