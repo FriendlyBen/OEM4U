@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-live',
@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './live.component.html',
   styleUrl: './live.component.scss'
 })
-export class LiveComponent {
+export class LiveComponent implements AfterViewInit {
 
+  @ViewChild('myVideo') myVideo!: ElementRef<HTMLVideoElement>;
+
+  ngAfterViewInit(): void {
+      if(this.myVideo && this.myVideo.nativeElement){
+        this.myVideo.nativeElement.volume = 0.3;
+      }
+  }
 }

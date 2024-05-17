@@ -1,5 +1,5 @@
 import { Component, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -16,7 +16,7 @@ export class AppComponent implements AfterViewInit {
   isSelected: string = "home";
 
   constructor(
-    private router: Router
+    private router: Router,private viewportScroller: ViewportScroller
   ){
 
   }
@@ -37,6 +37,7 @@ export class AppComponent implements AfterViewInit {
       this.check.nativeElement.checked = false;
     }
     this.router.navigate(['']);
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 
   goToContact(){
@@ -46,6 +47,7 @@ export class AppComponent implements AfterViewInit {
       this.check.nativeElement.checked = false;
     }
     this.router.navigate(['/contact']);
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 
   goToAboutPage(){
@@ -54,7 +56,8 @@ export class AppComponent implements AfterViewInit {
     if(this.check !== undefined){
       this.check.nativeElement.checked = false;
     }
-    this.router.navigate(['/about'])
+    this.router.navigate(['/about']);
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 
   goToLivePage(){
@@ -63,7 +66,8 @@ export class AppComponent implements AfterViewInit {
     if(this.check !== undefined){
       this.check.nativeElement.checked = false;
     }
-    this.router.navigate(['/live'])
+    this.router.navigate(['/live']);
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 
   goToCenterPage(){
@@ -72,7 +76,8 @@ export class AppComponent implements AfterViewInit {
     if(this.check !== undefined){
       this.check.nativeElement.checked = false;
     }
-    this.router.navigate(['/center'])
+    this.router.navigate(['/center']);
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 
   gotoFaqPage(){
@@ -81,6 +86,7 @@ export class AppComponent implements AfterViewInit {
     if(this.check !== undefined){
       this.check.nativeElement.checked = false;
     }
-    this.router.navigate(['/faq'])
+    this.router.navigate(['/faq']);
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 }

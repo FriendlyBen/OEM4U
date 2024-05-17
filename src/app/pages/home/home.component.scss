@@ -111,8 +111,16 @@
     width: 30%; 
     border-radius: 50%; 
     height: 50vh;
-    background-color: red; /* Color of the circle */
+    background-image: 
+        conic-gradient(
+            #DA578B 0% 25%,
+            #9565E6 25% 50%,
+            #EAD908 50% 75%,
+            #FA8A20 75% 85% /* Adjusted the end percentage */
+        ),
+       
 }
+
 
 @media (max-width: 1301px) {
 
